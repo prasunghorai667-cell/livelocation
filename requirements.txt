@@ -1,13 +1,2 @@
-{
-  "name": "location-share",
-  "version": "1.0.0",
-  "description": "Location sharing service with persistent links",
-  "main": "server/app.py",
-  "scripts": {
-    "start": "python3 server/app.py"
-  },
-  "requirements": [
-    "flask>=2.3.0",
-    "sqlite3>=3.0"
-  ]
-}
+# No external dependencies required
+# Uses Python standard library only

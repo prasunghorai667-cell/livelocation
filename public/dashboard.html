@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Location Shares</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+<nav>
+      <a href="index.html">Share Location</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="login.html">Admin</a>
+    </nav>
+    
+    <div class="card">
+      <h1>Manage Shared Locations</h1>
+      
+      <table id="locationsTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Note</th>
+            <th>Created</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="locationsBody">
+        </tbody>
+      </table>
+      
+      <p id="emptyMsg" class="empty">No locations shared yet.</p>
+    </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

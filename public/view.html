@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Location</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initViewMap" async defer></script>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">Share Location</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html">Admin</a>
+    </nav>
+    
+    <div class="card">
+      <h1>Shared Location</h1>
+      
+      <div id="info">
+        <p><strong>Latitude:</strong> <span id="lat"></span></p>
+        <p><strong>Longitude:</strong> <span id="lng"></span></p>
+        <p><strong>Accuracy:</strong> <span id="acc"></span>m</p>
+        <p><strong>Shared:</strong> <span id="time"></span></p>
+        <p><strong>Note:</strong> <span id="note"></span></p>
+      </div>
+      
+      <div id="map" class="map-container"></div>
+    </div>
+  </div>
+
+  <script src="view.js"></script>
+</body>
+</html>

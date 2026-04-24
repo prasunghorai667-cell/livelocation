@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share My Location</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html" class="active">Share Location</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html">Admin</a>
+    </nav>
+    
+    <div class="card">
+      <h1>Share My Location</h1>
+      <p>Click the button below to share your current location with a link.</p>
+      
+      <div class="form-group">
+        <label for="note">Add a note (optional)</label>
+        <input type="text" id="note" placeholder="e.g., I'm here for the meeting">
+      </div>
+      
+      <button id="shareBtn" class="btn-primary">Share My Location</button>
+      
+      <div id="result" class="result hidden">
+        <p>Location shared!</p>
+        <div class="link-box">
+          <input type="text" id="shareLink" readonly>
+          <button id="copyBtn" class="btn-secondary">Copy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="map" class="map-preview hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
